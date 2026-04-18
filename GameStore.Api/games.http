@@ -9,7 +9,7 @@ Content-Type: application/json
 
 {
     "name": "",
-    "gender": "Platformer",
+    "genre": "Platformer",
     "price": 59.90,
     "releaseDate": "2023-10-20"
 }
@@ -21,7 +21,7 @@ Content-Type: application/json
 {
     "id": 1,
     "name": "Street Figther II 123",
-    "gender": "Fighting",
+    "genre": "Fighting",
     "price": 19.99,
     "releaseDate": "1992-07-15"
 }

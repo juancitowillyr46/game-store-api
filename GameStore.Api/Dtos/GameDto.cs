@@ -3,7 +3,7 @@ namespace GameStore.Api.Dtos;
 public record GameDto(
     int Id,
     string Name,
-    string Gender,
+    string Genre,
     decimal Price,
     DateOnly ReleaseDate
 );

@@ -57,7 +57,7 @@ public static class GamesEndpoints
             GameDto game = new(
                 games.Count + 1,
                 newGame.Name,
-                newGame.Gender,
+                newGame.Genre,
                 newGame.Price,
                 newGame.ReleaseDate
             );
@@ -79,7 +79,7 @@ public static class GamesEndpoints
             games[index] = new GameDto(
                 id,
                 updateGame.Name,
-                updateGame.Gender,
+                updateGame.Genre,
                 updateGame.Price,
                 updateGame.ReleaseDate
             );
