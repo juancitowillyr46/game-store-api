@@ -1,0 +1,58 @@
+# ======================
+# .NET Build outputs
+# ======================
+bin/
+obj/
+out/
+publish/
+
+# ======================
+# Visual Studio
+# ======================
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ======================
+# Rider / JetBrains
+# ======================
+.idea/
+
+# ======================
+# VS Code
+# ======================
+.vscode/
+
+# ======================
+# Entity Framework
+# ======================
+*.db
+*.sqlite
+*.sqlite3
+
+# EF migrations artifacts (opcional)
+Migrations/
+
+# ======================
+# Logs
+# ======================
+*.log
+
+# ======================
+# OS files
+# ======================
+.DS_Store
+Thumbs.db
+
+# ======================
+# Secrets
+# ======================
+appsettings.*.json
+!appsettings.json
+
+# ======================
+# Docker (si luego usas)
+# ======================
+docker-compose.override.yml
