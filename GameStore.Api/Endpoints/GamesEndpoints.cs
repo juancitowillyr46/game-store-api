@@ -10,8 +10,6 @@ public static class GamesEndpoints
 {
     const string EndpointName = "GetName";
 
-    //private static readonly List<GameSummaryDto> games = [];
-
     public static void MapGamesEndpoints(this WebApplication app)
     {
 
@@ -97,15 +95,8 @@ public static class GamesEndpoints
 
         group.MapDelete("/{id}", async (int id, GameStoreContext dbContext) =>
         {
-            var game = await dbContext.Games.FindAsync(id);
-
-            if(game == null)
-            {
-                return Results.NotFound();
-            }
-
-            dbContext.Games.Remove(game);
-            await dbContext.SaveChangesAsync();
+            await dbContext.Games
+                                      .Where(g => g.Id == id).ExecuteDeleteAsync();
 
             return Results.NoContent(); 
         });
