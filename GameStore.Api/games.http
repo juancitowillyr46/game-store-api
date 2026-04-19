@@ -8,8 +8,8 @@ POST http://localhost:5017/games
 Content-Type: application/json
 
 {
-    "name": "",
-    "genre": "Platformer",
+    "name": "Juego",
+    "genreId": 3,
     "price": 59.90,
     "releaseDate": "2023-10-20"
 }
@@ -20,11 +20,11 @@ Content-Type: application/json
 
 {
     "id": 1,
-    "name": "Street Figther II 123",
-    "genre": "Fighting",
+    "name": "Street Figther II 123 122",
+    "genreId": 4,
     "price": 19.99,
     "releaseDate": "1992-07-15"
 }
 
 ###
-DELETE http://localhost:5017/games/1
+DELETE http://localhost:5017/games/2
